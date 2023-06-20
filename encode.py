@@ -2,7 +2,7 @@ import jwt
 
 
 def encode_user():
-    encoded_data = jwt.encode(payload={"user": "sys-test-admin", "access": " approved"},
+    encoded_data = jwt.encode(payload={"user": "sys-test-admin2", "access": " approved"},
                               key='sy-secret',
                               algorithm="HS256")
                     
@@ -23,5 +23,5 @@ if __name__ == "__main__":
     token = encode_user()
     decoder = decode_user(token)
     print(encode_user())
-    print(" decoded value is2244 : ")
+    print(" decoded value is224444 : ")
     print(decoder)
